@@ -1,5 +1,5 @@
 # Vidmoly Video Download
-Download videos from Vidmoly to your own server
+Download videos from Vidmoly to your own server. Converts M3U8 files to MP4. So ffmpeg installation is required.
 
 
 ## Requirements
