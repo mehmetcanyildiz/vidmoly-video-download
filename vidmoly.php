@@ -2,7 +2,7 @@
 
 
 /**
- * Github : @mehmetcanyildiz
+ * Github: @mehmetcanyildiz
  */
 class Vidmoly
 {
