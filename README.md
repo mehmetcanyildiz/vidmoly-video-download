@@ -27,4 +27,4 @@ You can download it directly and add it to your system.
 
 * Example
   * $vidmoly = new Vidmoly();
-  * $result  = $vidmoly->download('/vidmoly/download/','msln7st1y5ij);
+  * $result  = $vidmoly->download('download/vidmoly','msln7st1y5ij');
