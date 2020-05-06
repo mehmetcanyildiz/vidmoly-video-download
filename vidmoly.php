@@ -27,7 +27,7 @@ class Vidmoly
           $result = array_filter(explode("\n",$result));
           array_splice($result, 0, 1); $i=0;
 
-          // Master M3U8 Break
+          // Master M3U8 Shape
           if(!empty($result)){
             foreach ($result as $key => $value) {
                if(strstr($value,'m3u8')){
@@ -65,13 +65,13 @@ class Vidmoly
 
 
 
-  // Download M3U8 File Save (Required FFMPEG)
+  // M3U8 URL to Mp4  (Required FFMPEG)
   private function downloadM3U8File(){
     exec('ffmpeg -i '.$this->qualityURL.' -c copy -bsf:a aac_adtstoasc '.$this->path.$this->label.'.mp4');
   }
 
 
-  // MP4 File Save
+  // Save As MP4
   private function downloadMP4File(){
     $file = fopen($this->path.$this->label.'.mp4','a+');
     fwrite($file,file_get_contents($this->qualityURL));
@@ -119,7 +119,7 @@ class Vidmoly
       return $result;
   }
 
-  // Save As Path Create
+  //  Create Save As Path 
   private function pathCreate($tempPath){
     $paths = array_filter(explode('/',$tempPath.'/'.$this->id.'/'));
     $realPath = realpath('.').'/';
